@@ -1,0 +1,21 @@
+    <?php include "includes/db_conn.php";
+                                    $sql = "SELECT * FROM `driver`";
+                                    $result = mysqli_query($conn, $sql);
+                                    while($row = mysqli_assoc($result)){
+                                 ?>
+
+                                        <tr>
+                                            <td><?php echo $row['driver_id'] ?></td>
+                                            <td>Oshino Shinobu</td>
+                                            <td>Valencia City, Bukidnon</td>
+                                            <td>2002-09-10</td>
+                                            <td>09350050225</td>
+                                            <td>oshino@gmail.com</td>
+                                            <td>
+                                                <button type="button" id="edit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editDriver">EDIT</button>
+                                                <button type="button" id="delete-btn" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete">DELETE</button>
+                                            </td> 
+                                        </tr>
+                                        <?php
+                                    }
+                                    ?>

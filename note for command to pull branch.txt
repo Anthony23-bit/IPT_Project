@@ -1,0 +1,8 @@
+git checkout developing
+git branch -a
+$ git remote add MotorPool-Mangement-System https://github.com/OrangeMintz/MotorPool-Mangement-System-.git
+git fetch -all
+ git fetch --all
+$ git checkout developing
+git branch
+git pull origin developing
